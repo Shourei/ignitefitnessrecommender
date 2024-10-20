@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Ignite Fitness</title>
+    <link rel="icon" href="Ignite Icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay muted loop>
+            <source src="GYM CINEMATIC.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+    </div>
+    <header class="header-container">
+        <a href="#" class="logo">
+            <img src="Ignite Fitness.png" alt="Logo">
+        </a>
+        <nav>
+            <ul class="nav">
+                <a class="nav-link" href="Home - Ignite Fitness.html">Home</a>
+                <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#footer">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="banner" id="banner">
+        <div class="content">
+            <h2>
+                <span id="typing-text"></span>
+                <span id="cursor">|</span>
+            </h2>
+            <!-- Button Wrapper -->
+            <div class="mb-4" style="margin-top: 40px;">
+                <button class="btn btn-signup" data-toggle="modal" data-target="#signUpModal">Sign Up</button>
+                <button class="btn btn-signin" data-toggle="modal" data-target="#signInModal">Sign In</button>
+            </div>
+        </div>
+    </section>
+ <!-- Sign In Modal -->
+<div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="signInModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-black" id="signInModalLabel">Sign In</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="signInForm">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password" required>
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="rememberMe">
+                        <label class="form-check-label" for="rememberMe">Remember Me</label>
+                    </div>
+                    <a href="#" class="text-muted">Forgot Password?</a>
+                    <div class="text-center mt-3">
+                        <button type="submit" class="btn btn-black">Sign In</button>
+                    </div>
+                </form>
+                <div class="text-center mt-3">
+                    <button class="btn btn-danger">
+                        <i class="fab fa-google"></i> Sign In with Google
+                    </button>
+                    <div class="mt-2"></div> <!-- Added space -->
+                    <button class="btn btn-primary">
+                        <i class="fab fa-facebook-f"></i> Sign In with Facebook
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Sign Up Modal -->
+<div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="signUpModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-black" id="signUpModalLabel">Sign Up</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="signUpForm">
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" class="form-control" id="fullName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signUpEmail">Email</label>
+                        <input type="email" class="form-control" id="signUpEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signUpPassword">Password</label>
+                        <input type="password" class="form-control" id="signUpPassword" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="password" class="form-control" id="confirmPassword" required>
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="terms">
+                        <label class="form-check-label" for="terms">I agree to the Terms & Conditions</label>
+                    </div>
+                    <div class="text-center mt-3">
+                        <button type="submit" class="btn btn-black">Sign Up</button>
+                    </div>
+                </form>
+                <div class="text-center mt-3">
+                    <button class="btn btn-danger">
+                        <i class="fab fa-google"></i> Sign In with Google
+                    </button>
+                    <div class="mt-2"></div> <!-- Added space -->
+                    <button class="btn btn-primary">
+                    <i class="fab fa-facebook-f"></i> Sign In with Facebook
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <section class="about" id="about" style="background-color: transparent; padding: 13px 0;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="titleText" style="color: white;">About</h2>
+                    <p style="color: white;">At Ignite Fitness, we’re not just a gym—we’re a community dedicated to igniting your passion for fitness. With state-of-the-art facilities, dynamic classes, and expert trainers, we provide an environment where everyone, from beginners to seasoned athletes, can thrive. Our mission is to empower you to achieve your health and wellness goals, making fitness a fun, integral part of your lifestyle. With ten locations nationwide, we’re always here to support you on your fitness journey. Join us and discover the Ignite difference—where your potential meets our commitment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="features" id="features" style="background-color: #2c2c2c; padding: 50px 0;">
+        <div class="container text-center">
+            <h2 class="titleText" style="color: #ffffff; font-family: 'Arial', sans-serif; padding: 15px; border-radius: 5px; display: inline-block;">
+                <span style="color: #ffffff;">Features</span>
+            </h2>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="card position-relative overflow-hidden">
+                        <img src="Arenas and Classes.jpg" class="card-img-top" alt="Arenas & Classes">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: white;">Arenas & Classes</h5>
+                            <p class="card-text" style="color: white;">Explore various options for training and competition.</p>
+                        </div>
+                        <div class="hover-effect">
+                            <p class="hover-text">Join us for an exhilarating experience!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card position-relative overflow-hidden">
+                        <img src="Gym Equipment.jpg" class="card-img-top" alt="Gym Equipment">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: white;">Gym Equipment</h5>
+                            <p class="card-text" style="color: white;">Discover top-notch gym equipment for all your fitness needs.</p>
+                        </div>
+                        <div class="hover-effect">
+                            <p class="hover-text">Get fit with the best tools!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card position-relative overflow-hidden">
+                        <img src="Personal Trainers.jpg" class="card-img-top" alt="Personal Trainers">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: white;">Personal Trainers</h5>
+                            <p class="card-text" style="color: white;">Receive guidance from experienced personal trainers.</p>
+                        </div>
+                        <div class="hover-effect">
+                            <p class="hover-text">Transform your journey with expert support!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="text-center text-white" id="footer">
+            <section class="d-flex justify-content-center p-2" style="background-color: #3f3d3e;">
+                <div class="social-container">
+                    <h5>Follow us on:</h5>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/" class="text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://mail.google.com/mail/u/0/#inbox" class="text-white"><i class="fab fa-google"></i></a>
+                        <a href="https://www.instagram.com/" class="text-white"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </section>
+            <section class="d-flex justify-content-center p-2" style="background-color: #3f3d3e;">
+                <div class="text-white">
+                    <a href="#" class="text-white" aria-label="Privacy Policy">
+                        <i class="fas fa-shield-alt"></i> Privacy Policy
+                    </a>
+                    <span>|</span>
+                    <a href="#" class="text-white" aria-label="Terms of Service">
+                        <i class="fas fa-file-contract"></i> Terms of Service
+                    </a>
+                    <span>|</span>
+                    <a href="#" class="text-white" aria-label="FAQs">
+                        <i class="fas fa-question-circle"></i> FAQs
+                    </a>
+                </div>
+            </section>
+        </footer>
+        <section class="text-center" style="padding: 20px;">
+            <img src="Ignite Fitness.png" alt="SoulSync Image" style="width: 180px; height: 60px;">
+        </section>
+        <div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.2);">
+            <span>2024 Earl Daniel, <a class="text-white" href="#">ignitefitness.com</a></span>
+        </div>
+    </footer>    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        const text = "UNLOCK LIMITLESS POSSIBILITIES WITH OUR NATIONWIDE GYM ACCESS";
+        const typingText = document.getElementById("typing-text");
+        const cursor = document.getElementById("cursor");
+        let isCursorVisible = true;
+        let isTypingComplete = false;
+        function toggleCursor() {
+            cursor.style.visibility = isCursorVisible ? "visible" : "hidden";
+            isCursorVisible = !isCursorVisible;
+        }
+        function typeWriter(text, i) {
+            if (i < text.length) {
+                typingText.innerHTML += text.charAt(i);
+                setTimeout(function() {
+                    typeWriter(text, i + 1);
+                }, 50);
+            } else {
+                isTypingComplete = true;
+                toggleCursor();
+            }
+        }
+        setInterval(function() {
+            if (isTypingComplete) {
+                cursor.style.visibility = "hidden";
+            } else {
+                toggleCursor();
+            }
+        }, 500);
+        typeWriter(text, 0);
+    </script>
+</body>
+</html>

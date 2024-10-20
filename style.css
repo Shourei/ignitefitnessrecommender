@@ -1,0 +1,238 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+}
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.banner {
+    position: relative;
+    z-index: 1;
+    padding: 100px 0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+footer {
+    background-color: #000000;
+    padding: 40px 0;
+}
+.social-container a {
+    margin: 0 10px;
+    color: #fff;
+}
+.titleText {
+    color: #3f3d3e;
+    margin-bottom: 20px;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+#footer {
+    margin-top: auto; /* Push the footer to the bottom */
+}
+.btn {
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    color: white; /* Text color */
+    background-color: black; /* Button background color */
+    border: none; /* Remove default border */
+    transition: color 0.4s, background-color 0.4s;
+}
+.btn:hover {
+    background-color: #333; /* Darker shade on hover */
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+.btn:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.5s ease;
+    z-index: 0;
+}
+.btn:hover:after {
+    transform: translate(-50%, -50%) scale(1);
+}
+.btn-signin {
+    background-color: black; /* Button background color */
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: linear-gradient(135deg, #343a40, #1c1e22); /* Gradient background */
+    color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    position: relative;
+}
+.logo img {
+    width: 90px;
+    height: auto; /* Maintain aspect ratio */
+}
+.nav {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Space between nav items */
+    margin: 0; /* Remove default margin */
+}
+.nav-item {
+    position: relative;
+}
+.nav-link {
+    color: white; /* Text color */
+    text-decoration: none;
+    padding: 5px 10px; /* Adds padding for a button-like effect */
+    border-radius: 5px; /* Rounding the corners */
+    transition: background-color 0.3s;
+}
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Light background on hover */
+    color: white; /* Ensure text stays white on hover */
+}
+/* Underline effect */
+.nav-link::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background: white; /* White underline */
+    width: 0;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -5px; /* Positioning the underline */
+    left: 50%;
+    transform: translateX(-50%);
+}
+.nav-link:hover::after {
+    width: 100%; /* Full width on hover */
+}
+.features {
+    background-color: #2c2c2c;
+    padding: 50px 0;
+}
+.card {
+    background-color: #000000;
+    border-radius: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.card img {
+    border-radius: 15px 15px 0 0;
+    transition: transform 0.5s ease;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+.card:hover img {
+    transform: scale(1.1);
+}
+.card-title {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.card-text {
+    color: #555;
+}
+.card-body {
+    position: relative;
+    padding: 20px;
+}
+.hover-effect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(41, 40, 40, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s, transform 0.3s;
+    border-radius: 15px;
+}
+.card:hover .hover-effect {
+    opacity: 1;
+    transform: scale(1.05);
+}
+.hover-text {
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.5s;
+}
+.card:hover .hover-text {
+    transform: translateY(-10px);
+}
+.titleText {
+    color: #ffffff; /* Ensure the title text is white */
+}
+.text-danger {
+    color: rgb(255, 255, 255); /* Adjust as needed for your design */
+}
+.text-white {
+    color: white;
+}
+.social-container {
+    text-align: center;
+}
+.social-links {
+    display: inline-flex; /* Change to inline-flex to center the icons */
+    justify-content: center;
+    margin-top: 5px;
+}
+.social-links a {
+    margin: 0 10px;
+}
+.modal {
+    z-index: 1050; /* Bootstrap default is 1040, so we increase it */
+}
+.modal-backdrop {
+    z-index: 1040; /* Ensure the backdrop is below the modal */
+}
+.modal-body {
+    color: black; /* Change text color to black */
+}
+.btn-danger {
+    background-color: red; /* Ensure Google button is red */
+    border-color: red; /* Ensure border matches */
+}
+
+.btn-primary {
+    background-color: #3b5998; /* Facebook blue */
+    border-color: #3b5998; /* Ensure border matches */
+}
+.text-black {
+    color: black;
+}
